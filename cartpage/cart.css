@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;  
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.contain1, .contain3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    z-index: 1000;
+    width: 100%;
+    gap: 150px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    list-style: none;
+}
+
+nav ul li {
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+}
+
+h1, h2, p {
+    font-family: "Playfair Display", serif;
+
+}
+
+.active {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+hr {
+    width: 95%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    margin-top: 20px;
+}
+
+.contain2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+    gap: 40px;
+}
+

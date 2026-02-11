@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #ebebeb;    
 }
 
 .main {
@@ -26,7 +29,7 @@ nav {
     height: 100px;
     z-index: 1000;
     width: 100%;
-    gap: 180px;
+    gap: 150px;
 
     position: fixed;
     top: 0;
@@ -48,6 +51,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+}
+
+h1, h2, p {
+    font-family: "Playfair Display", serif;
 }
 
 .active {
@@ -73,9 +82,3 @@ nav ul li a {
     font-size: 20px;
     line-height: 50px;
 }
-
-
-
-
-
-
