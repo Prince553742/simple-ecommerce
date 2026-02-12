@@ -68,7 +68,6 @@ h1, h2, p {
 hr {
     width: 95%;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
-    z-index: 2000;
     margin-top: 20px;
 }
 
@@ -79,5 +78,50 @@ hr {
     flex-direction: column;
     margin-top: -50px;
     gap: 40px;
+}
+
+.row1 {
+    width: 1150px;
+    height: 100%;
+    border: yellow solid 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.column1 {
+    width: 700px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.column2 {
+    background-color: #ebebeb;
+    width: 400px;
+    height: 200px;
+    padding: 5px 20px;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.side1 {
+    width: 680px;
+    height: 65px;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+.side2 {
+    width: 700px;
+    height: 400px;
+    background-color: rgb(206, 206, 206);
 }
 
