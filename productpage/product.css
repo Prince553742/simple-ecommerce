@@ -3,7 +3,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ebebeb;
 }
 
 .main {
@@ -84,24 +83,52 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 100px;
+    gap: 80px;
 }
 
-.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12 {
+.card1, .card2, .card3, .card4, .card5, .card6 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: rgb(174, 174, 174) solid 0.1px;
-    width: 350px;
-    height: 400px;
+    gap: 20px;
+    width: 400px;
+    height: 500px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: tranform 0.3s ease, box-shadow 0.3s ease;
+    transition: tranform 0.3s ease-in, box-shadow 0.3s ease;
 }
-.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover, .card9:hover, .card10:hover, .card11:hover, .card12:hover {
-    transform: translateY(-5px);
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    transform: translateY(-0px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
+
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
+    width: 200px;
+    height: 300px;
+}
+.card1 button, .card2 button, .card3 button, .card4 button, .card5 button, .card6 button {
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 138, 138);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+.card1 button a, .card2 button a, .card3 button a, .card4 button a, .card5 button a, .card6 button a {
+    text-decoration: none;
+    color: white;
+}
+.card1 button a:hover, .card2 button a:hover, .card3 button a:hover, .card4 button a:hover, .card5 button a:hover, .card6 button a:hover {
+    color: black;
+}
+.card1 button:hover, .card2 button:hover, .card3 button:hover, .card4 button:hover, .card5 button:hover, .card6 button:hover {
+    color: black;
+}
+
+
 
