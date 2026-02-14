@@ -54,9 +54,12 @@ nav ul li a {
     font-size: 15px;
 }
 
-h1, h2, p {
+h1, h2, p, button {
     font-family: "Playfair Display", serif;
+}
 
+button {
+    cursor: pointer;
 }
 
 .active {
@@ -73,10 +76,8 @@ hr {
 .contain2 {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
-    gap: 40px;
-    border: red solid 1px;
+    gap: 60px;
 }
 
 .column1 video {
@@ -86,11 +87,56 @@ hr {
     border-radius: 15px;
 }
 
+.column1 {
+    gap: 30px;
+}
+.column2 {
+    gap: 15px;
+}
+
+.column1 div button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addtocart {
+    color: red;
+    border: red solid 1px;
+    background-color: rgb(254, 224, 224);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.buynow {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.addtocart video {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+}
+
+.column1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
 
 .column2, .column1 {
     width: 650px;
     height: 100%;
-    border: yellow solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,24 +160,69 @@ hr {
     color: rgb(255, 157, 0);
 }
 
-.child2 {
-    border: red solid 1px;
+.child2, .child3, .child4, .child5, .child6 {
     width: 550px;
     display: flex;
     justify-content: start;
     flex-direction: row;
+    gap: 20px;
+}
+.child5 {
+    gap: 80px !important;
+}
+.child4, .child6 {
+    gap: 70px !important; 
 }
 
-.child2 p {
+.child2 p, .child3 p, .child4 p, .child5 p, .child6 p {
     width: 100px;
 }
 
-.child2 img {
+.child2 video, .child3 video {
+    margin: 10px;
     width: 50px;
     height: 50px;
 }
 
+.des {
+    width: 350px !important;
+}
 
+.child4 button, .child55 div button, .child6 button {
+    width: 80px;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+}
 
+.child4 div, .child6 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
 
+.child55 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    gap: 10px;
+}
 
+.child55 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: row;
+    gap: 50px;
+}
+
+.child6 div button {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
