@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BIANCATECHSTORE-PRODUCTiPHONES</title>
         <link rel="stylesheet" href="../iphoneproducts/iphon11product.css">
+        <script src="iphone11product.js"></script>
     </head>
 
     <body>
@@ -16,7 +17,7 @@
                     <ul>
                         <li><a href="../../../index.html">HOME</a></li>
                         <li><a href="../../../productpage/product.html">PRODUCTS</a></li>
-                        <li><a href="../../../cartpage/cart.html" class="active">CART</a></li>
+                        <li><a href="../../../cartpage/cart.html">CART</a></li>
                         <li><a href="../../../aboutspage/about.html">ABOUTS</a></li>
                         <li><a href="../../../accountpage/account.html">ACCOUNT</a></li>
                     </ul>
@@ -28,7 +29,7 @@
                 <div class="column1">
                     <video src="../../videos/ip11video.mp4" muted loop autoplay></video>                    
                     <div>
-                        <button class="addtocart"><video src="../../videos/cart.mp4"></video>ADD TO CART</button>
+                        <button class="addtocart"><video src="../../videos/cart.mp4" loop autoplay></video>ADD TO CART</button>
                         <button class="buynow">BUY NOW</button>
                     </div>
                 </div>
@@ -74,16 +75,84 @@
                     <div class="child6">
                         <p>Quantity</p>
                         <div>
-                            <button>-</button>
-                            <button></button>
-                            <button>+</button>
+                            <button id="minusbtn" class="minus">-</button>
+                            <button id="qtybtn">1</button>
+                            <button id="plusbtn" class="plus">+</button>
+                        </div>
+                    </div>
+
+                    <div class="child7">
+                        <div>
+                            <p>Subtotal: <span id="total"></span></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="container3">
-                
+            <div class="contain3">
+                <div class="specifications">
+                    <h2>PRODUCT SPECIFICATIONS</h2>
+                </div>
+                <div class="details">
+                    <div>
+                        <p>Display</p>
+                        <p>6.1-inch Liquid Retina HD LCD, 1792 x 828 resolution</p>
+                    </div>
+                    <div>
+                        <p>Chip</p>
+                        <p>A13 Bionic chip (7nm+), 6-core CPU, 4-core GPU</p>
+                    </div>
+                    <div>
+                        <p>Storage</p>
+                        <p>64GB, 128GB, 256GB</p>
+                    </div>
+                    <div>
+                        <p>Camera</p>
+                        <p>Dual 12 MP (wide + ultra-wide), Night Mode, 4K video up to 60fps</p>
+                    </div>
+                    <div>
+                        <p>Front Camera</p>
+                        <p>12 MP, 4K video up to 6ofps, Slo-mo</p>
+                    </div>
+                    <div>
+                        <p>Battery</p>
+                        <p>3110 mAh, Fast charging (50% in 30 mins with 18W charger)</p>
+                    </div>
+                    <div>
+                        <p>Connectivity</p>
+                        <p>4G LTE, Wi-Fi 6, Bluetooth 5.0</p>
+                    </div>
+                    <div>
+                        <p>Build</p>
+                        <p>Glass front and back, aluminum frame</p>
+                    </div> 
+                    <div>
+                        <p>Audio</p>
+                        <p>Stereo speakers with spatial audio support</p>
+                    </div>
+                    <div>
+                        <p>Security</p>
+                        <p>Secure Enclave for encrypted Face ID and personal data protection</p>
+                    </div>
+                    <div>
+                        <p>Others</p>
+                        <p>IP68 water resistance, Face ID, no MagSafe</p>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="contain4">
+                <h1>iPhone 11 Colors</h1>
+                <div>
+                    <img src="../../pictures/ip11/ip11green.png">
+                    <img src="../../pictures/ip11/ip11purple.png">
+                    <img src="../../pictures/ip11/ip11yellow.png">                    
+                </div>
+                <div>
+                    <img src="../../pictures/ip11/ip11black.png">
+                    <img src="../../pictures/ip11/ip11white.png">
+                    <img src="../../pictures/ip11/ip11red.png">
+                </div>
             </div>
         </div>
     </body>

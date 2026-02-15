@@ -13,11 +13,10 @@ body {
     gap: 70px;
 }
 
-.contain1, .contain3 {
+.contain1, .contain3, .contain4 {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 nav {
@@ -90,9 +89,6 @@ hr {
 .column1 {
     gap: 30px;
 }
-.column2 {
-    gap: 15px;
-}
 
 .column1 div button {
     width: 200px;
@@ -146,9 +142,12 @@ hr {
     width: 550px;
     font-size: 20px;
 }
+.column2 {
+    gap: 7px;
+}
 
 .child1 {
-    background-color: rgb(215, 215, 215);
+    background-color: #F4F4F4;
     width: 520px;
     height: 60px;
     display: flex;
@@ -157,7 +156,7 @@ hr {
     padding-left: 30px;
 }
 .child1 h2 {
-    color: rgb(255, 157, 0);
+    color: #FF0000;
 }
 
 .child2, .child3, .child4, .child5, .child6 {
@@ -193,6 +192,15 @@ hr {
     height: 35px;
     border-radius: 7px;
     border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.4s ease, transform 1s ease;
+}
+.child4 button:hover, .child55 div button:hover, .child6 button:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translate(0px);
+}
+.minus:active, .plus:active {
+    background-color: gray;
 }
 
 .child4 div, .child6 div {
@@ -209,7 +217,7 @@ hr {
     justify-content: center;
     align-items: center;
     width: 1500px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .child55 div {
@@ -225,4 +233,70 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.child7 div {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(205, 205, 205);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.specifications {
+    width: 1300px;
+    height: 50px;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+details {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.specifications h2 {
+    padding: 40px 30px;
+}
+
+.details div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.details div p:first-child {
+    width: 300px;
+    padding-left: 20px;
+}
+
+.contain3 {
+    gap: 30px;
+}
+.contain4 {
+    gap: 80px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.contain4 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.contain4 div img {
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
 }

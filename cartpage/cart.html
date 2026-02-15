@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BIANCATECHSTORE-CART</title>
         <link rel="stylesheet" href="cart.css">
+        <script src="cart.js"></script>
     </head>
 
     <body>
@@ -29,15 +30,69 @@
                 <div class="row1">
                     <div class="column1">   
                         <div class="side1">
-                            <input type="checkbox">
+                            <input type="checkbox" id="selectAll">
+                            <p id="item-count-text">SELECT ALL (0 ITEM(S))</p>
+                            <button>CLEAR</button>
                         </div>
-                        <div class="side2">
-                        </div>
+                        <div class="side2" id="cart-items-container">
+                            </div>
                     </div>
+
                     <div class="column2">
                         <h2>Order Summary</h2>
+                        <div class="summary-line">
+                            <p>Subtotal</p>
+                            <p id="summary-subtotal">₱0.00</p>
+                        </div>
+                        <div class="summary-line">
+                            <p>Shipping Fee</p>
+                            <p id="summary-shipping">₱0.00</p>
+                        </div>
+                        <div class="voucher-section">
+                            <input type="text" placeholder="Enter Voucher Code">
+                            <button id="apply-btn">APPLY</button>
+                        </div>
+                        <hr class="summary-hr">
+                        <div class="summary-line total-line">
+                            <h3>Subtotal</h3>
+                            <h3 id="summary-total" style="color: #ff6600;">₱0.00</h3>
+                        </div>
+                        <p class="vat-text">VAT included, where applicable</p>
+                        <button class="checkout-btn">PROCEED TO CHECKOUT (0)</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="receiptModal" class="modal">
+            <div class="modal-content">
+                <div class="receipt-header">
+                    <h2>BIANCATECHSTORE</h2>
+                    <p>Official Receipt</p>
+                    <p id="receipt-date"></p>
+                </div>
+                <hr style="border: 1px dashed #ccc; margin: 15px 0;">
+                <div class="receipt-info">
+                    <p><strong>Customer:</strong> Prince Carl Ponce Catayoc</p>
+                    <p><strong>Status:</strong> Order Confirmed</p>
+                </div>
+                <div id="receipt-items-list" style="margin: 20px 0;">
+                    </div>
+                <hr style="border: 1px dashed #ccc; margin: 15px 0;">
+                <div class="summary-line">
+                    <p>Subtotal:</p>
+                    <p id="r-subtotal"></p>
+                </div>
+                <div class="summary-line">
+                    <p>Shipping:</p>
+                    <p id="r-shipping"></p>
+                </div>
+                <div class="summary-line" style="font-weight: bold; font-size: 1.2em;">
+                    <p>Total Amount:</p>
+                    <p id="r-total" style="color: #ff6600;"></p>
+                </div>
+                <p style="text-align: center; font-style: italic; margin-top: 20px;">Thank you for your purchase!</p>
+                <button onclick="closeModal()" class="checkout-btn" style="background-color: black; margin-top: 20px;">CLOSE</button>
             </div>
         </div>
     </body>
