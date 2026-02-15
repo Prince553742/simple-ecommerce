@@ -113,13 +113,12 @@ hr {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
 }
 
-/* --- CONTAINER 2 FIXES --- */
 .contain2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 50px; /* Space below fixed nav */
+    margin-top: 50px; 
 }
 
 .contain2 h1 {
@@ -137,26 +136,24 @@ hr {
     max-width: 1200px;
 }
 
-/* Product Info Alignment */
 .child11 {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Aligns text to the left */
+    align-items: flex-start;
 }
 
 .child11 p {
     margin: 2px 0;
-    width: 100%; /* Overrides the 300px width from your previous version */
+    width: 100%;
     height: auto;
     font-family: "Playfair Display", serif;
 }
 
-/* Order Summary Box */
 .summary-line {
     display: flex;
-    justify-content: space-between; /* Puts label on left, price on right */
+    justify-content: space-between; 
     align-items: center;
     width: 100%;
 }
@@ -195,10 +192,9 @@ hr {
     width: 100%;
 }
 
-/* --- DYNAMIC CART ITEM STYLES --- */
 .cart-item-row {
     display: flex;
-    justify-content: space-between; /* Pushes price/qty to the right */
+    justify-content: space-between; 
     align-items: center;
     background-color: white;
     padding: 20px;
@@ -212,7 +208,7 @@ hr {
 }
 
 .cart-product-img {
-    width: 80px; /* Aligns with iPhone image sizes */
+    width: 80px;
     height: auto;
 }
 
@@ -235,7 +231,7 @@ hr {
 .item-control-section {
     display: flex;
     align-items: center;
-    gap: 40px; /* Space between price and quantity buttons */
+    gap: 40px; 
 }
 
 .price-text {
@@ -245,7 +241,6 @@ hr {
     text-align: right;
 }
 
-/* Quantity Box styling to match screenshot */
 .qty-selector {
     display: flex;
     border: 1px solid #ccc;
@@ -266,7 +261,6 @@ hr {
     text-align: center;
 }
 
-/* Voucher Section styling */
 .voucher-section {
     display: flex;
     gap: 10px;
@@ -287,9 +281,8 @@ hr {
     cursor: pointer;
 }
 
-/* Modal Background Overlay */
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -299,15 +292,14 @@ hr {
     background-color: rgba(0,0,0,0.7);
 }
 
-/* Modal Content Box */
 .modal-content {
     background-color: white;
     margin: 5% auto;
     padding: 30px;
-    width: 350px; /* Small like a real receipt */
+    width: 350px; 
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    font-family: 'Courier New', Courier, monospace; /* Classic receipt font */
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 .receipt-header {

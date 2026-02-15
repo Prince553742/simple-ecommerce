@@ -3,10 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedPrice = 12000;
     let selectedStorage = ""; 
     let selectedColor = "";
-    // Default fallback path for product page
     let selectedImage = "../../pictures/ip11.png"; 
 
-    // Mapping colors to specific files in your pictures/ip11 folder
     const colorImages = {
         "Black": "../../pictures/ip11/ip11black.png",
         "Green": "../../pictures/ip11/ip11green.png",
@@ -39,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
             selectedColor = button.textContent.trim();
             if (colorImages[selectedColor]) {
                 selectedImage = colorImages[selectedColor];
-                // Update product image on screen
                 const mainImg = document.querySelector('.child2 img');
                 if (mainImg) mainImg.src = selectedImage;
             }

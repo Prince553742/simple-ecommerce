@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- RECEIPT MODAL LOGIC ---
     if (checkoutBtn) {
         checkoutBtn.addEventListener('click', () => {
             const checkboxes = document.querySelectorAll('.item-checkbox');
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     subtotal += cart[index].price * cart[index].quantity;
                 }
             });
-
             if (selectedItems.length === 0) {
                 alert("Please select at least one item to checkout!");
                 return;
@@ -95,10 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const shipping = 100;
             const total = subtotal + shipping;
-
-            // Fill Modal Data
             document.getElementById('receipt-date').textContent = new Date().toLocaleString();
-            
             const listContainer = document.getElementById('receipt-items-list');
             listContainer.innerHTML = selectedItems.map(item => `
                 <div style="display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 5px;">
@@ -110,13 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('r-subtotal').textContent = `₱${subtotal.toLocaleString()}`;
             document.getElementById('r-shipping').textContent = `₱${shipping.toLocaleString()}`;
             document.getElementById('r-total').textContent = `₱${total.toLocaleString()}`;
-
-            // Show Modal
             document.getElementById('receiptModal').style.display = "block";
         });
     }
 
-    // Clear Button Logic
     const clearBtn = document.querySelector('.side1 button');
     if (clearBtn) {
         clearBtn.addEventListener('click', () => {
@@ -128,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// --- GLOBAL FUNCTIONS ---
 window.changeQty = function(index, delta) {
     let cart = JSON.parse(localStorage.getItem('cart'));
     cart[index].quantity += delta;
@@ -147,7 +138,6 @@ window.closeModal = function() {
     document.getElementById('receiptModal').style.display = "none";
 };
 
-// Close modal if clicking outside the white box
 window.onclick = function(event) {
     const modal = document.getElementById('receiptModal');
     if (event.target == modal) {
